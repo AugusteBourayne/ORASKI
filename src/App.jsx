@@ -685,11 +685,14 @@ export default function App() {
               id="af-play-button"
               class="af-clickable"
               visible={!isLoading && !isPlaying ? "true" : "false"}
+              position="0 0 -1.6"
+              geometry="primitive: plane; width: 0.95; height: 0.95"
+              material="shader: flat; transparent: true; opacity: 0.01; side: double"
             >
               <a-image
                 src="#af-img-play-button"
                 material="shader: flat; transparent: true; alphaTest: 0.02"
-                position="0 0 -1.6"
+                position="0 0 0.01"
                 width="0.9"
                 height="0.9"
               />
@@ -698,14 +701,14 @@ export default function App() {
                 color="#ffffff"
                 align="center"
                 width="2"
-                position="0 -0.58 -1.6"
+                position="0 -0.58 0.01"
               />
               <a-text
                 value="Cliquer ou appuyer sur Espace"
                 color="#6AD2CA"
                 align="center"
                 width="3.2"
-                position="0 -0.70 -1.6"
+                position="0 -0.70 0.01"
               />
             </a-entity>
 
